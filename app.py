@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, send_file
 import cv2
 import numpy as np
-from moviepy import editor as mp
+from moviepy.video.io.VideoFileClip import VideoFileClip
 import os
 import random
 
@@ -50,7 +50,7 @@ def generate_highlight():
     key_timestamps = detect_key_moments()
     clip_duration = 5
     clips = []
-    video = mp.VideoFileClip(VIDEO_PATH)
+   video = VideoFileClip(VIDEO_PATH)
 
     for timestamp in key_timestamps:
         start = max(0, timestamp - clip_duration)
