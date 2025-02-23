@@ -50,7 +50,9 @@ def generate_highlight():
     key_timestamps = detect_key_moments()
     clip_duration = 5
     clips = []
-   video = VideoFileClip(VIDEO_PATH)
+    def generate_highlight():
+    video = VideoFileClip(VIDEO_PATH)  # Ensure this is properly indented
+    # Your other processing code here
 
     for timestamp in key_timestamps:
         start = max(0, timestamp - clip_duration)
