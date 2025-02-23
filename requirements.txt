@@ -1,4 +1,6 @@
 flask
 opencv-python
 moviepy
+imageio[ffmpeg]
+numpy
 gunicorn
