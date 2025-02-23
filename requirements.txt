@@ -4,3 +4,4 @@ moviepy
 imageio[ffmpeg]
 numpy
 gunicorn
+gevent
