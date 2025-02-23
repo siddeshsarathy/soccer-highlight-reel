@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, send_file
 import cv2
 import numpy as np
-import moviepy.editor as mp
+from moviepy import editor as mp
 import os
 import random
 
